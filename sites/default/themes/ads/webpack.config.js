@@ -74,7 +74,7 @@ const config = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin('css/[name].css')
+    new ExtractTextPlugin('app.css')
   ]
 }
 

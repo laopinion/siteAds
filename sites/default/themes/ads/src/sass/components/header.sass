@@ -2,145 +2,21 @@
   margin: 0 auto
   width: 1000px
 #header
-  background-color: $rojo
-  #block1
-    background-color: $rojoOscuro
-    height: 25px
-    .container
-      .user, a
-        color: $blanco
-        text-decoration: none
-  #block2
-    height: 100px
-    margin-top: 10px
-    margin-bottom: 10px
-    .container
-      display: flex
-      display: -webkit-flex
-      display: -moz-flex
-      justify-content: center
-      -webkit-justify-content: center
-      -moz-justify-content: center
-      align-items: flex-start
-      -webkit-align-items: flex-start
-      -moz-align-items: flex-start
-      .fecha
-        color: $blanco
-        span
-          font-size: 1.4rem // 23px
-          font-weight: 700
-        p
-          margin: 0
-      .logo
-        background: url('../img/logo.svg') no-repeat
-        background-position: 50%
-        margin: 20px auto 0 auto
-        a
-          display: block
-          height: 80px
-          width: 280px
-  #block3
-    background-color: $rojoOscuro
-    height: 98px
-    .container
-      display: flex
-      display: -webkit-flex
-      display: -moz-flex
-      align-items: center
-      justify-content: space-between
-      -webkit-justify-content: space-between
-      -moz-justify-content: space-between
-      height: 100%
-      .opts
-        display: flex
-        display: -webkit-flex
-        display: -moz-flex
-        padding: 0
-        margin: 0
-        list-style: none
-        width: 500px
-        .opt
-          height: 98px
-          text-indent: -99999px
-          width: 124px
-          a
-            display: block
-            height: 100%
-        .empleos
-          background: url('../img/iconos/empleo.svg') no-repeat
-          background-position: 90% 100%
-          &:hover
-            background: url('../img/iconos/empleo-2.svg') no-repeat
-            background-position: 90% 100%
-        .empleos.active
-          background: url('../img/iconos/empleo-2.svg') no-repeat
-          background-position: 90% 100%
-        .autos
-          background: url('../img/iconos/vehiculo.svg') no-repeat
-          background-position: 90% 100%
-          &:hover
-            background: url('../img/iconos/vehiculo-2.svg') no-repeat
-            background-position: 90% 100%
-        .autos.active
-          background: url('../img/iconos/vehiculo-2.svg') no-repeat
-          background-position: 90% 100%
-        .finca
-          background: url('../img/iconos/fincaRaiz.svg') no-repeat
-          background-position: 90% 100%
-          &:hover
-            background: url('../img/iconos/fincaRaiz-2.svg') no-repeat
-            background-position: 90% 100%
-        .finca.active
-          background: url('../img/iconos/fincaRaiz-2.svg') no-repeat
-          background-position: 90% 100%
-        .varios
-          background: url('../img/iconos/varios.svg') no-repeat
-          background-position: 90% 100%
-          &:hover
-            background: url('../img/iconos/varios-2.svg') no-repeat
-            background-position: 90% 100%
-        .varios.active
-          background: url('../img/iconos/varios-2.svg') no-repeat
-          background-position: 90% 100%
-      .buscador
-        background: url('../img/iconos/cintilloBuscador.png') no-repeat
+  background-color: $gris
+  height: 35px
+  width: 100%
+  .header
+    display: flex
+    justify-content: space-between
+    .logo
+      background: url('../img/iconos/logoHeader.svg') no-repeat
+      height: 120px
+      width: 350px
+      a
+        display: block
         height: 100%
-        background-position-y: 15px
-        display: flex
-        display: -webkit-flex
-        display: -moz-flex
-        align-items: center
-        -webkit-align-items: center
-        -moz-align-items: center
-        width: 478px
-        .lupa
-          background: url('../img/iconos/lupa.svg') no-repeat
-          background-position: 8px 5px
-          height: 56px
-          width: 74px
-        form
-          height: 50px
-          border-left: 1px solid $rojoOscuro
-          margin-bottom: 5px
-          padding-left: 10px
-          width: 80%
-          .container-inline
-            height: 50px
-            display: flex
-            display: -webkit-flex
-            display: -moz-flex
-            .form-item
-              margin: 0
-              width: 90%
-            h2
-              display: none
-            input
-              border: none
-              background: transparent
-              color: $blanco
-              height: 100%
-              outline: 0
-              width: 100%
-            ::placeholder
-              color: #60020B
-              font-size: 0.8rem // 14px
+    .redesSociales
+      display: flex
+      padding: 0
+      list-style: none
+  
