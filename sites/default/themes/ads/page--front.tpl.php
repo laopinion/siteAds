@@ -11,45 +11,54 @@
         <li class="title">
           <h3>Banner Web</h3>
         </li>
-        <li class="1000x90">
-          <strong>1000x90Px</strong>
+        <li class="uno">
+          <strong data-index="1">1000x90Px <i class="flecha"></i></strong>
         </li>
-        <li class="1000x50">
-          <strong>1000x50Px <span>(Desplegable)</span></strong>
+        <li class="dos">
+          <strong data-index="2">1000x50Px <span>(Desplegable)</span> <i class="flecha"></i></strong>
         </li>
-        <li class="728x90">
-          <strong>728x90Px</strong>
+        <li class="tres">
+          <strong data-index="3">728x90Px <i class="flecha active"></i></strong>
         </li>
-        <li class="300x250">
-          <strong>300x250Px</strong>
+        <li class="cuatro">
+          <strong data-index="4">300x250Px <i class="flecha"></i></strong>
         </li>
         <li class="barraFlotante">
-          <strong>Barra flotante <span>(fijo)</span></strong>
+          <strong data-index="5">Barra flotante <span>(fijo)</span><i class="flecha"></i></strong>
         </li>
         <li class="layerInvasivo">
-          <strong>Layer invasivo</strong>
+          <strong data-index="6">Layer invasivo <i class="flecha"></i></strong>
         </li>
         <li class="tomaHome">
-          <strong>Toma de home <span>(desplegable + laterales)</span></strong>
+          <strong data-index="7">Toma de home <span>(desplegable + laterales)</span><i class="flecha"></i></strong>
         </li>
         <li class="160x160">
-          <strong>160x160Px <span>(Lateral)</span></strong>
+          <strong data-index="8">160x600Px <span>(Lateral)</span><i class="flecha"></i></strong>
         </li>
       </ul>
     </div>
     <div class="landing">
-      <strong>Landing <span>(página de aterrizaje)</span></strong>
+      <strong>Landing <span>(página de aterrizaje)</span> <i class="flecha"></i></strong>
     </div>
     <div class="boletin">
-      <strong>Boletin de noticias</strong>
+      <strong>Boletin de noticias <i class="flecha"></i></strong>
     </div>
   </div>
   <div class="right content">
-    <div class="device"></div>
+    <div class="deviceDesktop">
+      <div class="uno"> <!-- 1000x90 --> </div>
+      <div class="dos"> <!-- 1000x50 --> </div>
+      <div class="tres active"> <!-- 728x90 --> </div>
+      <div class="cuatro"> <!-- 300x250 --> </div>
+      <div class="cinco"> <!-- flotante --> </div>
+      <div class="seis"> <!-- invasivo --> </div>
+      <div class="siete"> <!-- --> </div>
+      <div class="ocho"> <!-- lateral 160x600 --> </div>
+    </div>
     <div class="info">
       <h2>Title</h2>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, hic reiciendis. Suscipit accusantium omnis in culpa deleniti quasi nesciunt et ut consectetur nisi exercitationem nemo, temporibus quae quibusdam explicabo. Placeat?</p>
-      <h3 id="nameBanner">Nombre banner</h3>
+      <h3 id="nameBanner">Banner 728x90PXL</h3>
       <div class="imgBanner"></div>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, obcaecati labore dignissimos soluta pariatur est. Illum repellat minus, et eum praesentium, officia eaque obcaecati harum numquam molestiae quo ullam? Perferendis!</p>
     </div>

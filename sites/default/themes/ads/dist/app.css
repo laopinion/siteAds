@@ -420,7 +420,19 @@ table {
           text-transform: uppercase; }
   #home .left strong {
     font-size: 24px;
-    line-height: 26px; }
+    line-height: 26px;
+    cursor: pointer;
+    position: relative; }
+    #home .left strong .flecha {
+      display: none;
+      background: url(images/src/img/iconos/flecha.svg) no-repeat;
+      position: absolute;
+      top: 0;
+      right: -32px;
+      height: 30px;
+      width: 28px; }
+    #home .left strong .active {
+      display: block; }
     #home .left strong span {
       font-weight: 300;
       color: #afafaf; }
@@ -431,12 +443,88 @@ table {
   #home .left .boletin {
     border-left: 4px solid #B92025;
     padding: 5px 0 5px 10px; }
-  #home .right .device {
+  #home .right .deviceDesktop {
+    position: relative;
     background: url(images/src/img/desktop.png) no-repeat;
     background-size: 500px;
     background-position: 50%;
     height: 360px;
     width: 100%; }
+    #home .right .deviceDesktop .uno, #home .right .deviceDesktop .dos, #home .right .deviceDesktop .tres, #home .right .deviceDesktop .cuatro, #home .right .deviceDesktop .cinco, #home .right .deviceDesktop .seis, #home .right .deviceDesktop .siete, #home .right .deviceDesktop .ocho {
+      display: none; }
+    #home .right .deviceDesktop .uno {
+      background: url(images/src/img/iconos/1000x90.svg) no-repeat;
+      position: absolute;
+      top: 69px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      height: 22px;
+      width: 168px; }
+    #home .right .deviceDesktop .dos {
+      background: url(images/src/img/iconos/1000x50.svg) no-repeat;
+      position: absolute;
+      top: 25px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      height: 22px;
+      width: 168px; }
+    #home .right .deviceDesktop .tres {
+      background: url(images/src/img/iconos/728x90.svg) no-repeat;
+      position: absolute;
+      top: 69px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      height: 22px;
+      width: 168px; }
+    #home .right .deviceDesktop .cuatro {
+      background: url(images/src/img/iconos/300x250.svg) no-repeat;
+      position: absolute;
+      top: 92px;
+      right: 166px;
+      height: 45px;
+      width: 50px; }
+    #home .right .deviceDesktop .cinco {
+      background: url(images/src/img/iconos/flotanteDesktop.svg) no-repeat;
+      position: absolute;
+      bottom: 123px;
+      right: 166px;
+      height: 12px;
+      width: 169px; }
+    #home .right .deviceDesktop .seis {
+      background: url(images/src/img/iconos/invasivoDesktop.svg) no-repeat;
+      position: absolute;
+      bottom: 170px;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      background-size: 100%;
+      height: 100px;
+      width: 100px; }
+    #home .right .deviceDesktop .siete {
+      background: url(images/src/img/iconos/160x600.svg) no-repeat;
+      position: absolute;
+      top: 24px;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      background-size: 100%;
+      height: 73px;
+      width: 215px; }
+    #home .right .deviceDesktop .ocho {
+      background: url(images/src/img/iconos/160x600.svg) no-repeat;
+      position: absolute;
+      top: 24px;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      background-size: 100%;
+      height: 73px;
+      width: 215px; }
+    #home .right .deviceDesktop .active {
+      display: block; }
 
 @media screen and (max-width: 768px) {
   #home {

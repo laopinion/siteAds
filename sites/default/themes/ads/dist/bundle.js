@@ -2391,6 +2391,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 (0, _jquery2.default)(function () {
   console.log('ok todo bien jquery');
+
+  var home = new _home2.default();
+  home.clickListDesktop();
 });
 
 /***/ }),
@@ -2459,8 +2462,59 @@ var Home = function () {
   }
 
   _createClass(Home, [{
-    key: 'slides',
-    value: function slides() {}
+    key: 'namesBanners',
+    value: function namesBanners(index) {
+      if (index == 1) {
+        return '1000x90PXL';
+      } else if (index == 2) {
+        return '1000x50PXL (Desplegable)';
+      } else if (index == 3) {
+        return '728x90PXL';
+      } else if (index == 4) {
+        return '300x250PXL';
+      } else if (index == 5) {
+        return 'barra flotante (fijo)';
+      } else if (index == 6) {
+        return 'Layer invasivo';
+      } else if (index == 7) {
+        return 'Toma de home (desplegable + laterales)';
+      } else if (index == 8) {
+        return '160x600PXL (lateral)';
+      }
+    }
+  }, {
+    key: 'limpiar',
+    value: function limpiar(indexClick) {
+      var _this = this;
+      (0, _jquery2.default)('#home .left #tipoBanner #listBannersDesktop li').each(function (index, element) {
+        if (index === indexClick) {
+          (0, _jquery2.default)(this).find('.flecha').addClass('active');
+        } else {
+          (0, _jquery2.default)(this).find('.flecha').removeClass('active');
+        }
+      });
+
+      (0, _jquery2.default)('#home .right .deviceDesktop div').each(function (index, element) {
+        index++;
+        if (index === indexClick) {
+          (0, _jquery2.default)(this).addClass('active');
+          var name = _this.namesBanners(index);
+          (0, _jquery2.default)('#home .right .info #nameBanner').html('Banner ' + name);
+        } else {
+          (0, _jquery2.default)(this).removeClass('active');
+        }
+      });
+      console.log('limpiando...');
+    }
+  }, {
+    key: 'clickListDesktop',
+    value: function clickListDesktop() {
+      var _this = this;
+      (0, _jquery2.default)('#home .left #tipoBanner #listBannersDesktop strong').click(function () {
+        var index = (0, _jquery2.default)(this).data('index');
+        _this.limpiar(index);
+      });
+    }
   }]);
 
   return Home;
