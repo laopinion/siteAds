@@ -316,8 +316,8 @@ table {
   width: 1000px; }
 
 #header {
-  background-color: #afafaf;
-  height: 35px;
+  background-color: #f2f2f2;
+  height: 37px;
   width: 100%; }
   #header .header {
     display: flex;
@@ -332,15 +332,217 @@ table {
     #header .header .redesSociales {
       display: flex;
       padding: 0;
-      list-style: none; }
+      list-style: none;
+      margin: 8px 0 0 0;
+      height: 25px;
+      width: 105px; }
+      #header .header .redesSociales li {
+        height: 20px;
+        width: 22px;
+        background: url(images/src/img/iconos/logosRedes.svg) no-repeat;
+        background-size: 90px;
+        margin: 0px 5px 0 0; }
+        #header .header .redesSociales li a {
+          display: block;
+          height: 100%; }
+      #header .header .redesSociales .facebook {
+        background-position-x: -1px; }
+      #header .header .redesSociales .twitter {
+        background-position-x: -24px; }
+      #header .header .redesSociales .instagram {
+        background-position-x: -46px; }
+      #header .header .redesSociales .youtube {
+        background-position-x: -69px; }
 
 @media screen and (max-width: 768px) {
   .container {
     width: 100%; } }
+
+#home {
+  margin-top: 110px;
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex; }
+  #home .content {
+    width: 500px; }
+  #home .left #devices {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+    -moz-align-items: flex-end;
+    width: 350px; }
+    #home .left #devices .desktop {
+      background: url(images/src/img/iconos/laptop.svg) no-repeat;
+      height: 112px;
+      width: 194px; }
+    #home .left #devices .tablet {
+      background: url(images/src/img/iconos/tablet.svg) no-repeat;
+      height: 92px;
+      width: 65px; }
+    #home .left #devices .movil {
+      background: url(images/src/img/iconos/movil.svg) no-repeat;
+      height: 60px;
+      width: 30px; }
+  #home .left #tipoBanner {
+    background: url(images/src/img/soporteWeb.png) no-repeat;
+    background-position-x: -40px;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    height: 420px;
+    width: 470px; }
+    #home .left #tipoBanner #listBannersDesktop {
+      margin: 20px 0 0 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      flex-direction: column;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      border-left: 4px solid #B92025;
+      padding: 5px 0 5px 10px; }
+      #home .left #tipoBanner #listBannersDesktop li {
+        margin-bottom: 7px; }
+        #home .left #tipoBanner #listBannersDesktop li .160x160 {
+          margin: 0; }
+        #home .left #tipoBanner #listBannersDesktop li h3 {
+          margin: 0;
+          text-transform: uppercase; }
+  #home .left strong {
+    font-size: 24px;
+    line-height: 26px; }
+    #home .left strong span {
+      font-weight: 300;
+      color: #afafaf; }
+  #home .left .landing {
+    border-left: 4px solid #B92025;
+    padding: 5px 0 5px 10px;
+    margin: 50px 0; }
+  #home .left .boletin {
+    border-left: 4px solid #B92025;
+    padding: 5px 0 5px 10px; }
+  #home .right .device {
+    background: url(images/src/img/desktop.png) no-repeat;
+    background-size: 500px;
+    background-position: 50%;
+    height: 360px;
+    width: 100%; }
 
 @media screen and (max-width: 768px) {
   #home {
     width: 100%; } }
 
 #footer {
-  background-color: #B92025; }
+  border-top: 4px solid #B92025;
+  margin-top: 200px; }
+  #footer .logoFooter {
+    background: url(images/src/img/iconos/logoFooter.svg) no-repeat #ffffff;
+    background-position: 50%;
+    margin: 0 auto;
+    position: relative;
+    top: -5px;
+    padding: 0 5px;
+    height: 90px;
+    width: 198px; }
+    #footer .logoFooter a {
+      display: block;
+      height: 100%; }
+  #footer .infoLaop {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 1px solid #afafaf;
+    padding: 0px 10px;
+    position: relative;
+    height: 100px; }
+    #footer .infoLaop .logo_icon {
+      padding: 0px;
+      position: relative;
+      width: 180px;
+      height: 60px;
+      top: 30px;
+      opacity: 1;
+      transition: all 0.5s ease-in-out; }
+      #footer .infoLaop .logo_icon .diarioFooter {
+        background: url(images/src/img/iconos/logo_footer.svg) -10px 0px/190px auto no-repeat;
+        height: 70px;
+        text-indent: -9999px;
+        margin: 0 auto; }
+        #footer .infoLaop .logo_icon .diarioFooter a {
+          display: block;
+          height: 50px;
+          text-indent: -9999px; }
+    #footer .infoLaop .txt {
+      color: #333;
+      font-size: 10px;
+      position: relative;
+      width: 680px;
+      height: 70px;
+      top: 20px;
+      border-left: 1px solid #afafaf;
+      border-right: 1px solid #afafaf; }
+      #footer .infoLaop .txt p {
+        line-height: 12px;
+        position: relative;
+        margin: 0px 20px; }
+        #footer .infoLaop .txt p span {
+          text-transform: uppercase;
+          font-weight: 600; }
+    #footer .infoLaop .redes_footer {
+      width: 100px;
+      height: 75px;
+      position: relative;
+      list-style: none;
+      margin: 0px;
+      top: 15px;
+      left: 0px;
+      padding: 0px;
+      margin-left: 20px;
+      display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap; }
+      #footer .infoLaop .redes_footer .h2Siganos {
+        font-size: 14px;
+        color: #333;
+        text-transform: uppercase;
+        font-weight: 700;
+        height: 20px;
+        position: relative;
+        top: 15px;
+        width: 100%; }
+      #footer .infoLaop .redes_footer li {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        width: 25px;
+        height: 25px; }
+        #footer .infoLaop .redes_footer li a {
+          display: block;
+          height: 100%; }
+      #footer .infoLaop .redes_footer .facebook {
+        background: url(images/src/img/iconos/redes_footer.svg) no-repeat -3px 0px/115px auto transparent; }
+      #footer .infoLaop .redes_footer .twitter {
+        background: url(images/src/img/iconos/redes_footer.svg) no-repeat -31px 0px/115px auto transparent; }
+      #footer .infoLaop .redes_footer .instagram {
+        background: url(images/src/img/iconos/redes_footer.svg) no-repeat -60px 0px/115px auto transparent; }
+      #footer .infoLaop .redes_footer .youtube {
+        background: url(images/src/img/iconos/redes_footer.svg) no-repeat -89px 0px/115px auto transparent; }

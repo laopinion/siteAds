@@ -1,2 +1,81 @@
 #home
-  
+  margin-top: 110px
+  display: flex
+  display: -webkit-flex
+  display: -moz-flex
+  .content
+    width: 500px
+  .left
+    #devices
+      display: flex
+      display: -webkit-flex
+      display: -moz-flex
+      justify-content: space-between
+      -webkit-justify-content: space-between
+      -moz-justify-content: space-between
+      align-items: flex-end
+      -webkit-align-items: flex-end
+      -moz-align-items: flex-end
+      width: 350px
+      .desktop
+        background: url('../img/iconos/laptop.svg') no-repeat
+        height: 112px
+        width: 194px
+      .tablet
+        background: url('../img/iconos/tablet.svg') no-repeat
+        height: 92px
+        width: 65px
+      .movil
+        background: url('../img/iconos/movil.svg') no-repeat
+        height: 60px
+        width: 30px
+    #tipoBanner
+      background: url('../img/soporteWeb.png') no-repeat
+      background-position-x: -40px
+      display: flex
+      display: -webkit-flex
+      display: -moz-flex
+      align-items: center
+      -webkit-align-items: center
+      -moz-align-items: center
+      height: 420px
+      width: 470px
+      #listBannersDesktop
+        margin: 20px 0 0 0
+        padding: 0
+        list-style: none
+        display: flex
+        display: -webkit-flex
+        display: -moz-flex
+        flex-direction: column
+        -webkit-flex-direction: column
+        -moz-flex-direction: column
+        border-left: 4px solid $rojo
+        padding: 5px 0 5px 10px
+        li
+          margin-bottom: 7px
+          .160x160
+            margin: 0
+          h3
+            margin: 0
+            text-transform: uppercase
+    strong
+      font-size: 24px
+      line-height: 26px
+      span
+        font-weight: 300
+        color: $gris
+    .landing
+      border-left: 4px solid $rojo
+      padding: 5px 0 5px 10px
+      margin: 50px 0
+    .boletin
+      border-left: 4px solid $rojo
+      padding: 5px 0 5px 10px
+  .right
+    .device
+      background: url('../img/desktop.png') no-repeat
+      background-size: 500px
+      background-position: 50%
+      height: 360px
+      width: 100%
