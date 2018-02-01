@@ -17,6 +17,8 @@
       -webkit-align-items: flex-end
       -moz-align-items: flex-end
       width: 350px
+      .desktop, .tablet, .movil
+        cursor: pointer
       .desktop
         background: url('../img/iconos/laptop.svg') no-repeat
         height: 112px
@@ -77,13 +79,78 @@
       span
         font-weight: 300
         color: $gris
+    #tipoBannerMovil
+      background: url('../img/soporteMovil.png') no-repeat
+      background-position-x: -40px
+      display: flex
+      display: -webkit-flex
+      display: -moz-flex
+      align-items: center
+      -webkit-align-items: center
+      -moz-align-items: center
+      height: 285px
+      width: 470px
+      #listBannersMovil
+        margin: 20px 0 0 0
+        padding: 0
+        list-style: none
+        display: flex
+        display: -webkit-flex
+        display: -moz-flex
+        flex-direction: column
+        -webkit-flex-direction: column
+        -moz-flex-direction: column
+        border-left: 4px solid $rojo
+        padding: 5px 0 5px 10px
+        li
+          margin-bottom: 7px
+          .160x160
+            margin: 0
+          h3
+            margin: 0
+            text-transform: uppercase
+    strong
+      font-size: 24px
+      line-height: 26px
+      cursor: pointer
+      position: relative
+      .flecha
+        display: none
+        background: url('../img/iconos/flecha.svg') no-repeat
+        position: absolute
+        top: 0
+        right: -32px
+        height: 30px
+        width: 28px
+      .active
+        display: block
     .landing
       border-left: 4px solid $rojo
       padding: 5px 0 5px 10px
       margin: 50px 0
+      .flecha
+        display: none
+        background: url('../img/iconos/flecha.svg') no-repeat
+        position: absolute
+        top: 0
+        right: -32px
+        height: 30px
+        width: 28px
+      .active
+        display: block
     .boletin
       border-left: 4px solid $rojo
       padding: 5px 0 5px 10px
+      .flecha
+        display: none
+        background: url('../img/iconos/flecha.svg') no-repeat
+        position: absolute
+        top: 0
+        right: -32px
+        height: 30px
+        width: 28px
+      .active
+        display: block
   .right
     .deviceDesktop
       position: relative
@@ -145,10 +212,10 @@
         background-size: 100%
         height: 100px
         width: 100px
-      .siete
-        background: url('../img/iconos/160x600.svg') no-repeat
+      .siete // Toma de home
+        background: url('../img/iconos/tomaHome.svg') no-repeat
         position: absolute
-        top: 24px
+        top: 28px
         right: 0
         left: 0
         margin: 0 auto
@@ -167,3 +234,97 @@
         width: 215px
       .active
         display: block
+    .deviceMovil
+      display: none
+      position: relative
+      background: url('../img/movil.png') no-repeat
+      background-size: 278px
+      background-position: 50%
+      height: 351px
+      width: 100%
+      .uno, .dos, .tres, .cuatro
+        display: none
+      .uno // 320x50
+        background: url('../img/iconos/barraFijaMovil.svg') no-repeat
+        position: absolute
+        bottom: 40px
+        left: 0
+        right: -47px
+        margin: 0 auto
+        height: 22px
+        width: 168px
+      .dos // 320x100
+        background: url('../img/iconos/320x100.svg') no-repeat
+        position: absolute
+        top: 25px
+        left: 0
+        right: -45px
+        margin: 0 auto
+        height: 22px
+        width: 168px
+      .tres // 320x250
+        background: url('../img/iconos/300x250.svg') no-repeat
+        position: absolute
+        top: 88px
+        left: 0
+        right: 0
+        margin: 0 auto
+        height: 55px
+        width: 60px
+      .cuatro // Barra fija
+        background: url('../img/iconos/barraFijaMovil.svg') no-repeat
+        position: absolute
+        bottom: 40px
+        left: 0
+        right: -47px
+        margin: 0 auto
+        height: 22px
+        width: 168px
+      .active
+        display: block
+    .landing
+      display: none
+      position: relative
+      background: url('../img/iconos/landing.svg') no-repeat
+      height: 1075px
+      width: 522px
+      .video, .formulario, .contacto
+        position: absolute
+        right: 0
+        .icon
+          background: url('../img/iconos/flecha.svg') no-repeat
+          display: block;
+          transform: rotate(180deg)
+          position: absolute
+          right: -35px
+          top: 45%
+          height: 30px
+          width: 28px
+        aside
+          position: absolute
+          top: 45%
+          font-weight: 300
+          font-size: 24px
+          color: $gris
+      .video, .formulario
+        height: 249px
+        border-right: 4px solid $rojo
+      .video
+        top: 183px
+        aside          
+          right: -95px
+      .formulario
+        top: 535px
+        aside
+          right: -150px
+      .contacto
+        border-right: 4px solid $rojo
+        height: 94px
+        top: 885px
+        aside
+          right: -130px
+    .boletin
+      display: none
+      background: url('../img/iconos/boletin.svg') no-repeat
+      height: 1075px
+      width: 522px

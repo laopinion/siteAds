@@ -6,4 +6,8 @@ $(function() {
   
   const home = new Home();
   home.clickListDesktop();
+  home.clickLanding();
+  home.clickBoletin();
+  home.changeDevices();
+  home.clickListMovil();
 });

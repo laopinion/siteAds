@@ -376,6 +376,8 @@ table {
     -webkit-align-items: flex-end;
     -moz-align-items: flex-end;
     width: 350px; }
+    #home .left #devices .desktop, #home .left #devices .tablet, #home .left #devices .movil {
+      cursor: pointer; }
     #home .left #devices .desktop {
       background: url(images/src/img/iconos/laptop.svg) no-repeat;
       height: 112px;
@@ -436,13 +438,78 @@ table {
     #home .left strong span {
       font-weight: 300;
       color: #afafaf; }
+  #home .left #tipoBannerMovil {
+    background: url(images/src/img/soporteMovil.png) no-repeat;
+    background-position-x: -40px;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    height: 285px;
+    width: 470px; }
+    #home .left #tipoBannerMovil #listBannersMovil {
+      margin: 20px 0 0 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      flex-direction: column;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      border-left: 4px solid #B92025;
+      padding: 5px 0 5px 10px; }
+      #home .left #tipoBannerMovil #listBannersMovil li {
+        margin-bottom: 7px; }
+        #home .left #tipoBannerMovil #listBannersMovil li .160x160 {
+          margin: 0; }
+        #home .left #tipoBannerMovil #listBannersMovil li h3 {
+          margin: 0;
+          text-transform: uppercase; }
+  #home .left strong {
+    font-size: 24px;
+    line-height: 26px;
+    cursor: pointer;
+    position: relative; }
+    #home .left strong .flecha {
+      display: none;
+      background: url(images/src/img/iconos/flecha.svg) no-repeat;
+      position: absolute;
+      top: 0;
+      right: -32px;
+      height: 30px;
+      width: 28px; }
+    #home .left strong .active {
+      display: block; }
   #home .left .landing {
     border-left: 4px solid #B92025;
     padding: 5px 0 5px 10px;
     margin: 50px 0; }
+    #home .left .landing .flecha {
+      display: none;
+      background: url(images/src/img/iconos/flecha.svg) no-repeat;
+      position: absolute;
+      top: 0;
+      right: -32px;
+      height: 30px;
+      width: 28px; }
+    #home .left .landing .active {
+      display: block; }
   #home .left .boletin {
     border-left: 4px solid #B92025;
     padding: 5px 0 5px 10px; }
+    #home .left .boletin .flecha {
+      display: none;
+      background: url(images/src/img/iconos/flecha.svg) no-repeat;
+      position: absolute;
+      top: 0;
+      right: -32px;
+      height: 30px;
+      width: 28px; }
+    #home .left .boletin .active {
+      display: block; }
   #home .right .deviceDesktop {
     position: relative;
     background: url(images/src/img/desktop.png) no-repeat;
@@ -504,9 +571,9 @@ table {
       height: 100px;
       width: 100px; }
     #home .right .deviceDesktop .siete {
-      background: url(images/src/img/iconos/160x600.svg) no-repeat;
+      background: url(images/src/img/iconos/tomaHome.svg) no-repeat;
       position: absolute;
-      top: 24px;
+      top: 28px;
       right: 0;
       left: 0;
       margin: 0 auto;
@@ -525,6 +592,100 @@ table {
       width: 215px; }
     #home .right .deviceDesktop .active {
       display: block; }
+  #home .right .deviceMovil {
+    display: none;
+    position: relative;
+    background: url(images/src/img/movil.png) no-repeat;
+    background-size: 278px;
+    background-position: 50%;
+    height: 351px;
+    width: 100%; }
+    #home .right .deviceMovil .uno, #home .right .deviceMovil .dos, #home .right .deviceMovil .tres, #home .right .deviceMovil .cuatro {
+      display: none; }
+    #home .right .deviceMovil .uno {
+      background: url(images/src/img/iconos/barraFijaMovil.svg) no-repeat;
+      position: absolute;
+      bottom: 40px;
+      left: 0;
+      right: -47px;
+      margin: 0 auto;
+      height: 22px;
+      width: 168px; }
+    #home .right .deviceMovil .dos {
+      background: url(images/src/img/iconos/320x100.svg) no-repeat;
+      position: absolute;
+      top: 25px;
+      left: 0;
+      right: -45px;
+      margin: 0 auto;
+      height: 22px;
+      width: 168px; }
+    #home .right .deviceMovil .tres {
+      background: url(images/src/img/iconos/300x250.svg) no-repeat;
+      position: absolute;
+      top: 88px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      height: 55px;
+      width: 60px; }
+    #home .right .deviceMovil .cuatro {
+      background: url(images/src/img/iconos/barraFijaMovil.svg) no-repeat;
+      position: absolute;
+      bottom: 40px;
+      left: 0;
+      right: -47px;
+      margin: 0 auto;
+      height: 22px;
+      width: 168px; }
+    #home .right .deviceMovil .active {
+      display: block; }
+  #home .right .landing {
+    display: none;
+    position: relative;
+    background: url(images/src/img/iconos/landing.svg) no-repeat;
+    height: 1075px;
+    width: 522px; }
+    #home .right .landing .video, #home .right .landing .formulario, #home .right .landing .contacto {
+      position: absolute;
+      right: 0; }
+      #home .right .landing .video .icon, #home .right .landing .formulario .icon, #home .right .landing .contacto .icon {
+        background: url(images/src/img/iconos/flecha.svg) no-repeat;
+        display: block;
+        transform: rotate(180deg);
+        position: absolute;
+        right: -35px;
+        top: 45%;
+        height: 30px;
+        width: 28px; }
+      #home .right .landing .video aside, #home .right .landing .formulario aside, #home .right .landing .contacto aside {
+        position: absolute;
+        top: 45%;
+        font-weight: 300;
+        font-size: 24px;
+        color: #afafaf; }
+    #home .right .landing .video, #home .right .landing .formulario {
+      height: 249px;
+      border-right: 4px solid #B92025; }
+    #home .right .landing .video {
+      top: 183px; }
+      #home .right .landing .video aside {
+        right: -95px; }
+    #home .right .landing .formulario {
+      top: 535px; }
+      #home .right .landing .formulario aside {
+        right: -150px; }
+    #home .right .landing .contacto {
+      border-right: 4px solid #B92025;
+      height: 94px;
+      top: 885px; }
+      #home .right .landing .contacto aside {
+        right: -130px; }
+  #home .right .boletin {
+    display: none;
+    background: url(images/src/img/iconos/boletin.svg) no-repeat;
+    height: 1075px;
+    width: 522px; }
 
 @media screen and (max-width: 768px) {
   #home {

@@ -2394,6 +2394,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
   var home = new _home2.default();
   home.clickListDesktop();
+  home.clickLanding();
+  home.clickBoletin();
+  home.changeDevices();
+  home.clickListMovil();
 });
 
 /***/ }),
@@ -2483,6 +2487,19 @@ var Home = function () {
       }
     }
   }, {
+    key: 'namesBannersMovil',
+    value: function namesBannersMovil(index) {
+      if (index == 1) {
+        return '320x50PXL';
+      } else if (index == 2) {
+        return '320x100PXL';
+      } else if (index == 3) {
+        return '300x250PXL';
+      } else if (index == 4) {
+        return 'Barra fija';
+      }
+    }
+  }, {
     key: 'limpiar',
     value: function limpiar(indexClick) {
       var _this = this;
@@ -2507,12 +2524,152 @@ var Home = function () {
       console.log('limpiando...');
     }
   }, {
+    key: 'limpiarMovil',
+    value: function limpiarMovil(indexClick) {
+      var _this = this;
+      (0, _jquery2.default)('#home .left #tipoBannerMovil #listBannersMovil li').each(function (index, element) {
+        if (index === indexClick) {
+          (0, _jquery2.default)(this).find('.flecha').addClass('active');
+        } else {
+          (0, _jquery2.default)(this).find('.flecha').removeClass('active');
+        }
+      });
+
+      (0, _jquery2.default)('#home .right .deviceMovil div').each(function (index, element) {
+        index++;
+        if (index === indexClick) {
+          (0, _jquery2.default)(this).addClass('active');
+          var name = _this.namesBannersMovil(index);
+          (0, _jquery2.default)('#home .right .info #nameBanner').html('Banner ' + name);
+        } else {
+          (0, _jquery2.default)(this).removeClass('active');
+        }
+      });
+      console.log('limpiando...');
+    }
+  }, {
     key: 'clickListDesktop',
     value: function clickListDesktop() {
       var _this = this;
       (0, _jquery2.default)('#home .left #tipoBanner #listBannersDesktop strong').click(function () {
         var index = (0, _jquery2.default)(this).data('index');
+        (0, _jquery2.default)('#home .right .deviceDesktop').show();
+        (0, _jquery2.default)('#home .right .landing').hide();
+        (0, _jquery2.default)('#home .right .boletin').hide();
+        (0, _jquery2.default)('#home .left .landing').find('.flecha').removeClass('active');
+        (0, _jquery2.default)('#home .left .boletin').find('.flecha').removeClass('active');
         _this.limpiar(index);
+      });
+    }
+  }, {
+    key: 'clickListMovil',
+    value: function clickListMovil() {
+      var _this = this;
+      (0, _jquery2.default)('#home .left #tipoBannerMovil #listBannersMovil strong').click(function () {
+        var index = (0, _jquery2.default)(this).data('index');
+        (0, _jquery2.default)('#home .right .deviceMovil').show();
+        (0, _jquery2.default)('#home .right .landing').hide();
+        (0, _jquery2.default)('#home .right .boletin').hide();
+        (0, _jquery2.default)('#home .left .landing').find('.flecha').removeClass('active');
+        (0, _jquery2.default)('#home .left .boletin').find('.flecha').removeClass('active');
+        _this.limpiarMovil(index);
+      });
+    }
+  }, {
+    key: 'clickLanding',
+    value: function clickLanding() {
+      (0, _jquery2.default)('#home .left .landing').click(function () {
+        (0, _jquery2.default)('#home .right .deviceDesktop').hide();
+        (0, _jquery2.default)('#home .right .deviceMovil').hide();
+        (0, _jquery2.default)('#home .right .boletin').hide();
+        (0, _jquery2.default)('#home .left #tipoBanner #listBannersDesktop li').each(function (index, element) {
+          (0, _jquery2.default)(this).find('.flecha').removeClass('active');
+        });
+        (0, _jquery2.default)('#home .left #tipoBannerMovil #listBannersMovil li').each(function (index, element) {
+          (0, _jquery2.default)(this).find('.flecha').removeClass('active');
+        });
+        (0, _jquery2.default)('#home .right .landing').show();
+        (0, _jquery2.default)('#home .left .boletin').find('.flecha').removeClass('active');
+        (0, _jquery2.default)(this).find('.flecha').addClass('active');
+        var name = 'Landing (página de aterrizaje)';
+        (0, _jquery2.default)('#home .right .info #nameBanner').html('Banner ' + name);
+      });
+    }
+  }, {
+    key: 'clickBoletin',
+    value: function clickBoletin() {
+      (0, _jquery2.default)('#home .left .boletin').click(function () {
+        (0, _jquery2.default)('#home .right .deviceDesktop').hide();
+        (0, _jquery2.default)('#home .right .deviceMovil').hide();
+        (0, _jquery2.default)('#home .right .landing').hide();
+        (0, _jquery2.default)('#home .left #tipoBanner #listBannersDesktop li').each(function (index, element) {
+          (0, _jquery2.default)(this).find('.flecha').removeClass('active');
+        });
+        (0, _jquery2.default)('#home .left #tipoBannerMovil #listBannersMovil li').each(function (index, element) {
+          (0, _jquery2.default)(this).find('.flecha').removeClass('active');
+        });
+        (0, _jquery2.default)('#home .right .boletin').show();
+        (0, _jquery2.default)('#home .left .landing').find('.flecha').removeClass('active');
+        (0, _jquery2.default)(this).find('.flecha').addClass('active');
+        var name = 'Boletin de noticias';
+        (0, _jquery2.default)('#home .right .info #nameBanner').html('Banner ' + name);
+      });
+    }
+  }, {
+    key: 'encontrarName',
+    value: function encontrarName() {
+      var name = '';
+      (0, _jquery2.default)('#home .left #tipoBanner #listBannersDesktop li').each(function (index, element) {
+        if ((0, _jquery2.default)(this).find('.flecha').hasClass('active')) {
+          name = (0, _jquery2.default)(this).find('strong').text();
+          name = name.toUpperCase();
+          name = _jquery2.default.trim(name);
+        }
+      });
+      return name;
+    }
+  }, {
+    key: 'encontrarNameMovil',
+    value: function encontrarNameMovil() {
+      var name = '';
+      (0, _jquery2.default)('#home .left #tipoBannerMovil #listBannersMovil li').each(function (index, element) {
+        if ((0, _jquery2.default)(this).find('.flecha').hasClass('active')) {
+          name = (0, _jquery2.default)(this).find('strong').text();
+          name = name.toUpperCase();
+          name = _jquery2.default.trim(name);
+          name = name + 'L';
+        }
+      });
+      return name;
+    }
+  }, {
+    key: 'changeDevices',
+    value: function changeDevices() {
+      var _this = this;
+      (0, _jquery2.default)('#home .left #devices .desktop').click(function () {
+        (0, _jquery2.default)('#home .left #tipoBanner').show();
+        (0, _jquery2.default)('#home .left #tipoBannerMovil').hide();
+        (0, _jquery2.default)('#home .right .landing').hide();
+        (0, _jquery2.default)('#home .right .boletin').hide();
+        (0, _jquery2.default)('#home .left .landing').find('.flecha').removeClass('active');
+        (0, _jquery2.default)('#home .left .boletin').find('.flecha').removeClass('active');
+        (0, _jquery2.default)('#home .right .deviceDesktop').show();
+        (0, _jquery2.default)('#home .right .deviceMovil').hide();
+        var name = _this.encontrarName();
+        (0, _jquery2.default)('#home .right .info #nameBanner').html('Banner ' + name);
+      });
+
+      (0, _jquery2.default)('#home .left #devices .movil, #home .left #devices .tablet').click(function () {
+        (0, _jquery2.default)('#home .left #tipoBanner').hide();
+        (0, _jquery2.default)('#home .left #tipoBannerMovil').show();
+        (0, _jquery2.default)('#home .right .deviceDesktop').hide();
+        (0, _jquery2.default)('#home .right .landing').hide();
+        (0, _jquery2.default)('#home .right .boletin').hide();
+        (0, _jquery2.default)('#home .left .landing').find('.flecha').removeClass('active');
+        (0, _jquery2.default)('#home .left .boletin').find('.flecha').removeClass('active');
+        (0, _jquery2.default)('#home .right .deviceMovil').show();
+        var name = _this.encontrarNameMovil();;
+        (0, _jquery2.default)('#home .right .info #nameBanner').html('Banner ' + name);
       });
     }
   }]);

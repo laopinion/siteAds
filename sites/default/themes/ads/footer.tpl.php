@@ -1,7 +1,7 @@
 <footer id="footer">
   <div class="logoFooter"><a href="<?php print base_path(); ?>"></a></div>
   <div class="infoLaop container">
-    <div class="logo_icon"><!--Logo icono--><div class="diarioFooter"><a class="logoimg" href="<?php print base_path(); ?>">Diario La Opinión | Cúcuta</a></div><!--Fin Logo icono-->
+    <div class="logo_icon"><!--Logo icono--><div class="diarioFooter"><a class="logoimg" href="https://www.laopinion.com.co/" target="_blank">Diario La Opinión | Cúcuta</a></div><!--Fin Logo icono-->
     </div>
     <div class="txt">
       <p><span>DIARIO LA OPINIÓN</span> - Av. 4 Nro. 16 - 12. Teléfono (+57) (7) 5829999 - Fax (+57) (7) 5831502 - Cúcuta - Colombia</p>
