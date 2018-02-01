@@ -686,6 +686,10 @@ table {
     background: url(images/src/img/iconos/boletin.svg) no-repeat;
     height: 1075px;
     width: 522px; }
+  #home .right .info h2 {
+    text-transform: uppercase; }
+  #home .right .info h3 {
+    text-transform: uppercase; }
 
 @media screen and (max-width: 768px) {
   #home {
