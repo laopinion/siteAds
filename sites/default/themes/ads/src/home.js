@@ -4,7 +4,7 @@ class Home {
   constructor() {
     this.name = 'John serrano';
   }
-
+  // Desktop
   namesBanners(index) {
     if (index == 1) {
       return '1000x90PXL'
@@ -36,7 +36,7 @@ class Home {
       return 'Barra fija'
     }
   }
-
+  // Desktop
   limpiar(indexClick) {
     const _this = this;
     $('#home .left #tipoBanner #listBannersDesktop li').each(function (index, element) { 
@@ -57,7 +57,7 @@ class Home {
         $(this).removeClass('active');
       }
     });
-    console.log('limpiando...')
+    // console.log('limpiando...')
   }
 
   limpiarMovil(indexClick) {
@@ -80,7 +80,7 @@ class Home {
         $(this).removeClass('active');
       }
     });
-    console.log('limpiando...')
+    // console.log('limpiando...')
   }
 
   clickListDesktop () {
@@ -146,7 +146,7 @@ class Home {
       $('#home .right .info #nameBanner').html(`Banner ${name}`);
     })
   }
-
+  // Desktop
   encontrarName () {
     let name = '';
     $('#home .left #tipoBanner #listBannersDesktop li').each(function (index, element) {
@@ -196,7 +196,7 @@ class Home {
       $('#home .left .landing').find('.flecha').removeClass('active');
       $('#home .left .boletin').find('.flecha').removeClass('active');
       $('#home .right .deviceMovil').show();
-      let name = _this.encontrarNameMovil();;
+      let name = _this.encontrarNameMovil();
       $('#home .right .info #nameBanner').html(`Banner ${name}`);
     });
   }
