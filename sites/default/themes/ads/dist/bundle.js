@@ -63,9 +63,8 @@
 /******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ 0:
+/******/ ([
+/* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2355,8 +2354,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)(module)))
 
 /***/ }),
-
-/***/ 1:
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2369,15 +2367,13 @@ __webpack_require__(2);
 __webpack_require__(3);
 
 /***/ }),
-
-/***/ 2:
+/* 2 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 3:
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2391,7 +2387,7 @@ var _home = __webpack_require__(6);
 
 var _home2 = _interopRequireDefault(_home);
 
-var _ordenPauta = __webpack_require__(36);
+var _ordenPauta = __webpack_require__(7);
 
 var _ordenPauta2 = _interopRequireDefault(_ordenPauta);
 
@@ -2413,71 +2409,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 });
 
 /***/ }),
-
-/***/ 36:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _jquery = __webpack_require__(0);
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var Orden = function () {
-  // http://localhost/siteAds/api/views/vendedores/?display_id=services_1&id-user=3
-  function Orden() {
-    _classCallCheck(this, Orden);
-
-    this.name = 'John serrano';
-    var ruta = window.location.origin;
-    if (ruta != 'http://localhost') {
-      ruta = ruta + '/api/views/vendedores/?display_id=services_1';
-    } else {
-      ruta = ruta + '/siteAds/api/views/vendedores/?display_id=services_1';
-    }
-    this.ruta = ruta;
-  }
-
-  _createClass(Orden, [{
-    key: 'user',
-    value: function user() {
-      var ruta = this.ruta;
-      var id = (0, _jquery2.default)('#ordenPauta .autor #idUser .field-item').text();
-
-      _jquery2.default.get(ruta + '&id-user=' + id).done(function (data) {
-        // console.log(data);
-        try {
-          (0, _jquery2.default)('#ordenPauta .autor .name').html(data[0].users_name);
-          (0, _jquery2.default)('#ordenPauta .autor .picture').html(data[0].users_picture);
-          (0, _jquery2.default)('#ordenPauta .autor .cargo').html(data[0].cargo);
-        } catch (err) {
-          // console.log(err);
-        }
-      }).fail(function () {
-        console.log('Error....');
-      });
-    }
-  }]);
-
-  return Orden;
-}();
-
-exports.default = Orden;
-
-/***/ }),
-
-/***/ 4:
+/* 4 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -2505,8 +2437,7 @@ module.exports = function(module) {
 
 
 /***/ }),
-
-/***/ 5:
+/* 5 */
 /***/ (function(module, exports) {
 
 /* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {/* globals __webpack_amd_options__ */
@@ -2515,8 +2446,7 @@ module.exports = __webpack_amd_options__;
 /* WEBPACK VAR INJECTION */}.call(exports, {}))
 
 /***/ }),
-
-/***/ 6:
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2766,6 +2696,67 @@ var Home = function () {
 
 exports.default = Home; // Esto es otra forma de exportar modules
 
-/***/ })
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
 
-/******/ });
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Orden = function () {
+  // http://localhost/siteAds/api/views/vendedores/?display_id=services_1&id-user=3
+  function Orden() {
+    _classCallCheck(this, Orden);
+
+    this.name = 'John serrano';
+    var ruta = window.location.origin;
+    if (ruta != 'http://localhost') {
+      ruta = ruta + '/api/views/vendedores/?display_id=services_1';
+    } else {
+      ruta = ruta + '/siteAds/api/views/vendedores/?display_id=services_1';
+    }
+    this.ruta = ruta;
+  }
+
+  _createClass(Orden, [{
+    key: 'user',
+    value: function user() {
+      var ruta = this.ruta;
+      var id = (0, _jquery2.default)('#ordenPauta .autor #idUser .field-item').text();
+
+      _jquery2.default.get(ruta + '&id-user=' + id).done(function (data) {
+        // console.log(data);
+        try {
+          (0, _jquery2.default)('#ordenPauta .autor .name').html(data[0].users_name);
+          (0, _jquery2.default)('#ordenPauta .autor .picture').html(data[0].users_picture);
+          (0, _jquery2.default)('#ordenPauta .autor .cargo').html(data[0].cargo);
+        } catch (err) {
+          // console.log(err);
+        }
+      }).fail(function () {
+        console.log('Error....');
+      });
+    }
+  }]);
+
+  return Orden;
+}();
+
+exports.default = Orden;
+
+/***/ })
+/******/ ]);
