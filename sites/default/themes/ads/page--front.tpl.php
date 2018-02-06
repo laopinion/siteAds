@@ -1,5 +1,13 @@
 <!-- Slides imagen destacadas -->
 <section id="home" class="container">
+  <section id="menu">
+    <div id="nav-icon3" data-active="0">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </section>
   <div class="left content">
     <div id="devices">
       <div class="desktop"></div>

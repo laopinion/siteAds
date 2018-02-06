@@ -83,6 +83,12 @@ class Home {
     // console.log('limpiando...')
   }
 
+  ocultarMenu () {
+    $('#home #menu #nav-icon3').removeClass('open');
+    $('#home .left').css('left', '-320px');
+    $('#home #menu #nav-icon3').data('active', '0');
+  }
+
   clickListDesktop () {
     const _this = this;
     $('#home .left #tipoBanner #listBannersDesktop strong').click( function () {
@@ -92,6 +98,7 @@ class Home {
       $('#home .right .boletin').hide();
       $('#home .left .landing').find('.flecha').removeClass('active');
       $('#home .left .boletin').find('.flecha').removeClass('active');
+      _this.ocultarMenu();
       _this.limpiar(index);
    });
   }
@@ -106,10 +113,12 @@ class Home {
       $('#home .left .landing').find('.flecha').removeClass('active');
       $('#home .left .boletin').find('.flecha').removeClass('active');
       _this.limpiarMovil(index);
+      _this.ocultarMenu();
    });
   }
 
   clickLanding () {
+    const _this = this;
     $('#home .left .landing').click(function () {
       $('#home .right .deviceDesktop').hide();
       $('#home .right .deviceMovil').hide();
@@ -125,10 +134,13 @@ class Home {
       $(this).find('.flecha').addClass('active');
       const name = 'Landing (página de aterrizaje)';
       $('#home .right .info #nameBanner').html(`Banner ${name}`);
-    })
+
+      _this.ocultarMenu();
+    });
   }
 
   clickBoletin () {
+    const _this = this;
     $('#home .left .boletin').click(function () {
       $('#home .right .deviceDesktop').hide();
       $('#home .right .deviceMovil').hide();
@@ -144,6 +156,7 @@ class Home {
       $(this).find('.flecha').addClass('active');
       const name = 'Boletin de noticias';
       $('#home .right .info #nameBanner').html(`Banner ${name}`);
+      _this.ocultarMenu();
     })
   }
   // Desktop

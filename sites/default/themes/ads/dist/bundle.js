@@ -2405,6 +2405,19 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   home.changeDevices();
   home.clickListMovil();
 
+  (0, _jquery2.default)('#menu #nav-icon3').click(function () {
+    (0, _jquery2.default)(this).toggleClass('open');
+    var active = (0, _jquery2.default)(this).data('active');
+    // console.log(active)
+    if (active == 0) {
+      (0, _jquery2.default)('#home .left').css('left', '0');
+      (0, _jquery2.default)(this).data('active', '1');
+    } else {
+      (0, _jquery2.default)('#home .left').css('left', '-320px');
+      (0, _jquery2.default)(this).data('active', '0');
+    }
+  });
+
   orden.user();
 });
 
@@ -2560,6 +2573,13 @@ var Home = function () {
       // console.log('limpiando...')
     }
   }, {
+    key: 'ocultarMenu',
+    value: function ocultarMenu() {
+      (0, _jquery2.default)('#home #menu #nav-icon3').removeClass('open');
+      (0, _jquery2.default)('#home .left').css('left', '-320px');
+      (0, _jquery2.default)('#home #menu #nav-icon3').data('active', '0');
+    }
+  }, {
     key: 'clickListDesktop',
     value: function clickListDesktop() {
       var _this = this;
@@ -2570,6 +2590,7 @@ var Home = function () {
         (0, _jquery2.default)('#home .right .boletin').hide();
         (0, _jquery2.default)('#home .left .landing').find('.flecha').removeClass('active');
         (0, _jquery2.default)('#home .left .boletin').find('.flecha').removeClass('active');
+        _this.ocultarMenu();
         _this.limpiar(index);
       });
     }
@@ -2585,11 +2606,13 @@ var Home = function () {
         (0, _jquery2.default)('#home .left .landing').find('.flecha').removeClass('active');
         (0, _jquery2.default)('#home .left .boletin').find('.flecha').removeClass('active');
         _this.limpiarMovil(index);
+        _this.ocultarMenu();
       });
     }
   }, {
     key: 'clickLanding',
     value: function clickLanding() {
+      var _this = this;
       (0, _jquery2.default)('#home .left .landing').click(function () {
         (0, _jquery2.default)('#home .right .deviceDesktop').hide();
         (0, _jquery2.default)('#home .right .deviceMovil').hide();
@@ -2605,11 +2628,14 @@ var Home = function () {
         (0, _jquery2.default)(this).find('.flecha').addClass('active');
         var name = 'Landing (página de aterrizaje)';
         (0, _jquery2.default)('#home .right .info #nameBanner').html('Banner ' + name);
+
+        _this.ocultarMenu();
       });
     }
   }, {
     key: 'clickBoletin',
     value: function clickBoletin() {
+      var _this = this;
       (0, _jquery2.default)('#home .left .boletin').click(function () {
         (0, _jquery2.default)('#home .right .deviceDesktop').hide();
         (0, _jquery2.default)('#home .right .deviceMovil').hide();
@@ -2625,6 +2651,7 @@ var Home = function () {
         (0, _jquery2.default)(this).find('.flecha').addClass('active');
         var name = 'Boletin de noticias';
         (0, _jquery2.default)('#home .right .info #nameBanner').html('Banner ' + name);
+        _this.ocultarMenu();
       });
     }
     // Desktop
