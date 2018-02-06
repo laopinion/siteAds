@@ -563,6 +563,9 @@ table {
       text-decoration: none;
       color: #000000; }
 
+#profile {
+  margin-top: 100px; }
+
 #home {
   margin-top: 110px;
   display: flex;
