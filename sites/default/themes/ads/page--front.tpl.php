@@ -104,11 +104,9 @@
     </div>
     <div class="boletin"></div>
     <div class="info">
-      <h2>Title</h2>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, hic reiciendis. Suscipit accusantium omnis in culpa deleniti quasi nesciunt et ut consectetur nisi exercitationem nemo, temporibus quae quibusdam explicabo. Placeat?</p>
       <h3 id="nameBanner">Banner 728x90PXL</h3>
       <div class="imgBanner"></div>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, obcaecati labore dignissimos soluta pariatur est. Illum repellat minus, et eum praesentium, officia eaque obcaecati harum numquam molestiae quo ullam? Perferendis!</p>
+      <p id="infoBanner">También denominado "leaderboard". Suele ofrecer un mayor inventario de anuncios de los anunciantes, lo que puede aumentar los ingresos si se habilitan tanto los anuncios de texto como los anuncios de imagen estáticos. <br> <br> Tiene un buen rendimiento si se sitúa sobre el contenido principal y en foros.</p>
     </div>
   </div>
 </section>

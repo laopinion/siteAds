@@ -7,33 +7,79 @@ class Home {
   // Desktop
   namesBanners(index) {
     if (index == 1) {
-      return '1000x90PXL'
+      return {
+        name: '1000x90PXL',
+        description: '1000x90 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, obcaecati labore dignissimos soluta pariatur est. Illum repellat minus, et eum praesentium, officia eaque obcaecati harum numquam molestiae quo ullam? Perferendis!'
+      }
     } else if(index == 2) {
-      return '1000x50PXL (Desplegable)'
+      return {
+        name: '1000x50PXL (Desplegable)',
+        description: '1000x50 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, obcaecati labore dignissimos soluta pariatur est. Illum repellat minus, et eum praesentium, officia eaque obcaecati harum numquam molestiae quo ullam? Perferendis!'
+      }
     } else if (index == 3) {
-      return '728x90PXL'
+      return {
+        name: '728x90PXL',
+        description: 'También denominado "leaderboard". Suele ofrecer un mayor inventario de anuncios de los anunciantes, lo que puede aumentar los ingresos si se habilitan tanto los anuncios de texto como los anuncios de imagen estáticos. <br> <br> Tiene un buen rendimiento si se sitúa sobre el contenido principal y en foros.'
+      }
     } else if (index == 4) {
-      return '300x250PXL'
+      return {
+        name: '300x250PXL',
+        description: 'También denominado "rectángulo mediano". Suele ofrecer un mayor inventario de anuncios de los anunciantes, lo que puede aumentar los ingresos si se habilitan tanto los anuncios de texto como los anuncios de imagen estáticos. <br> <br> Tiene un buen rendimiento cuando se inserta dentro del contenido de texto o al final de artículos.'
+      }
     } else if (index == 5) {
-      return 'barra flotante (fijo)'
+      return {
+        name: 'barra flotante (fijo)',
+        description: 'barra flotante Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, obcaecati labore dignissimos soluta pariatur est. Illum repellat minus, et eum praesentium, officia eaque obcaecati harum numquam molestiae quo ullam? Perferendis!'
+      }
     } else if (index == 6) {
-      return 'Layer invasivo'
+      return {
+        name: 'Layer invasivo',
+        description: 'Layer invasivo Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, obcaecati labore dignissimos soluta pariatur est. Illum repellat minus, et eum praesentium, officia eaque obcaecati harum numquam molestiae quo ullam? Perferendis!'
+      }
     } else if (index == 7) {
-      return 'Toma de home (desplegable + laterales)'
+      return {
+        name: 'Toma de home (desplegable + laterales)',
+        description: 'Toma de home Layer invasivo Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, obcaecati labore dignissimos soluta pariatur est. Illum repellat minus, et eum praesentium, officia eaque obcaecati harum numquam molestiae quo ullam? Perferendis!'
+      }
     } else if (index == 8) {
-      return '160x600PXL (lateral)'
+      return {
+        name: '160x600PXL (lateral)',
+        description: 'También denominado "skyscraper ancho". Suele haber un mayor inventario de anuncios de los anunciantes disponible en él, lo que puede aumentar los ingresos si se habilitan tanto los anuncios de texto como los anuncios de imagen estáticos. <br> <br> Tiene un mejor rendimiento si se utiliza en las barras laterales de las páginas web.'
+      }
+    } else if (index == 0) {
+      return {
+        name: '',
+        description: ''
+      }
     }
   }
 
   namesBannersMovil (index) {
     if (index == 1) {
-      return '320x50PXL'
+      return {
+        name: '320x50PXL',
+        description: 'También denominado "leaderboard para móviles". Este formato es un banner optimizado para dispositivos móviles. <br> <br> Se ha demostrado que estos anuncios funcionan bien como formato de anuncio para smartphones, especialmente cuando se colocan en la parte inferior de la página.'
+      }
     } else if(index == 2) {
-      return '320x100PXL'
+      return {
+        name: '320x100PXL',
+        description: 'También denominado "banner para dispositivos móviles grande". Se puede usar como alternativa a los formatos 320 x 50 y 300 x 250. <br> <br> Estos anuncios tienen el doble de altura que el "leaderboard para dispositivos móviles" estándar.'
+      }
     } else if (index == 3) {
-      return '300x250PXL'
+      return {
+        name: '300x250PXL',
+        description: 'También denominado "rectángulo mediano". Suele ofrecer un mayor inventario de anuncios de los anunciantes, lo que puede aumentar los ingresos si se habilitan tanto los anuncios de texto como los anuncios de imagen estáticos. <br> <br> Tiene un buen rendimiento cuando se inserta dentro del contenido de texto o al final de artículos.'
+      }
     } else if (index == 4) {
-      return 'Barra fija'
+      return {
+        name: 'Barra fija',
+        description: ' Barra fija ...'
+      }
+    } else if (index == 0) {
+      return {
+        name: '',
+        description: ''
+      }
     }
   }
   // Desktop
@@ -52,7 +98,8 @@ class Home {
       if (index === indexClick) {
         $(this).addClass('active');
         const name = _this.namesBanners(index);
-        $('#home .right .info #nameBanner').html(`Banner ${name}`);
+        $('#home .right .info #nameBanner').html(`Banner ${name.name}`);
+        $('#home .right .info #infoBanner').html(`${name.description}`);
       }else {
         $(this).removeClass('active');
       }
@@ -75,7 +122,8 @@ class Home {
       if (index === indexClick) {
         $(this).addClass('active');
         const name = _this.namesBannersMovil(index);
-        $('#home .right .info #nameBanner').html(`Banner ${name}`);
+        $('#home .right .info #nameBanner').html(`Banner ${name.name}`);
+        $('#home .right .info #infoBanner').html(`${name.description}`);
       }else {
         $(this).removeClass('active');
       }
@@ -161,28 +209,23 @@ class Home {
   }
   // Desktop
   encontrarName () {
-    let name = '';
+    let id = 0;
     $('#home .left #tipoBanner #listBannersDesktop li').each(function (index, element) {
       if ($(this).find('.flecha').hasClass('active')) {
-        name = $(this).find('strong').text();
-        name = name.toUpperCase();
-        name = $.trim(name);
+        id = $(this).find('strong').data('index');
       }
     });
-    return name;
+    return this.namesBanners(id)
   }
 
   encontrarNameMovil () {
-    let name = '';
+    let id = 0;
     $('#home .left #tipoBannerMovil #listBannersMovil li').each(function (index, element) {
       if ($(this).find('.flecha').hasClass('active')) {
-        name = $(this).find('strong').text();
-        name = name.toUpperCase();
-        name = $.trim(name);
-        name = `${name}L`;
+        id = $(this).find('strong').data('index'); 
       }
     });
-    return name;
+    return this.namesBannersMovil(id);
   }
 
   changeDevices () {
@@ -197,7 +240,8 @@ class Home {
       $('#home .right .deviceDesktop').show();
       $('#home .right .deviceMovil').hide();
       let name = _this.encontrarName();
-      $('#home .right .info #nameBanner').html(`Banner ${name}`);
+      $('#home .right .info #nameBanner').html(`Banner ${name.name}`);
+      $('#home .right .info #infoBanner').html(`${name.description}`);
     });
 
     $('#home .left #devices .movil, #home .left #devices .tablet').click(function () {
@@ -210,7 +254,8 @@ class Home {
       $('#home .left .boletin').find('.flecha').removeClass('active');
       $('#home .right .deviceMovil').show();
       let name = _this.encontrarNameMovil();
-      $('#home .right .info #nameBanner').html(`Banner ${name}`);
+      $('#home .right .info #nameBanner').html(`Banner ${name.name}`);
+      $('#home .right .info #infoBanner').html(`${name.description}`);
     });
   }
 }
