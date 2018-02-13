@@ -563,6 +563,17 @@ table {
       text-decoration: none;
       color: #000000; }
 
+@media screen and (max-width: 768px) {
+  .view-consulta.view-id-consulta {
+    width: 96%;
+    margin: 150px 2%; }
+    .view-consulta.view-id-consulta .view-content {
+      overflow: scroll; }
+  .view-consulta.view-id-consulta .views-exposed-widgets {
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap; } }
+
 #profile {
   margin-top: 100px; }
 
