@@ -1,18 +1,24 @@
 @media screen and (max-width: 768px)
   #home
+    flex-direction: column
+    -webkit-flex-direction: column
+    -moz-flex-direction: column
+    align-items: center
+    -webkit-align-items: center
+    -moz-align-items: center
     width: 100%
     #menu
       display: block
     .left
-      position: absolute
-      left: -320px
       background-color: white
       max-width: 320px
-      transition: 1s;
-      z-index: 1
       padding-bottom: 10px
       #devices, #tipoBanner, #tipoBannerMovil
         max-width: 320px
+      #tipoBanner
+        background: url('../img/soporteMovilWeb.png') no-repeat
+      #tipoBannerMovil
+        background: url('../img/soporteMovilM.png') no-repeat
       strong span
         font-size: 18px
       .tomaHome

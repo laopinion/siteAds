@@ -2405,18 +2405,18 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   home.changeDevices();
   home.clickListMovil();
 
-  (0, _jquery2.default)('#menu #nav-icon3').click(function () {
-    (0, _jquery2.default)(this).toggleClass('open');
-    var active = (0, _jquery2.default)(this).data('active');
-    // console.log(active)
-    if (active == 0) {
-      (0, _jquery2.default)('#home .left').css('left', '0');
-      (0, _jquery2.default)(this).data('active', '1');
-    } else {
-      (0, _jquery2.default)('#home .left').css('left', '-320px');
-      (0, _jquery2.default)(this).data('active', '0');
-    }
-  });
+  // $('#menu #nav-icon3').click(function () {
+  //   $(this).toggleClass('open');
+  //   let active = $(this).data('active');
+  //   // console.log(active)
+  //   if (active == 0) {
+  //     $('#home .left').css('left', '0');
+  //     $(this).data('active', '1');
+  //   } else {
+  //     $('#home .left').css('left', '-320px');
+  //     $(this).data('active', '0');
+  //   }
+  // });
 
   orden.user();
 });
