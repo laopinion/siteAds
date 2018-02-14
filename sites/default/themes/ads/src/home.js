@@ -8,27 +8,27 @@ class Home {
   namesBanners(index) {
     if (index == 1) {
       return {
-        name: '1000x90PXL',
+        name: '1000x90 PX',
         description: '1000x90 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, obcaecati labore dignissimos soluta pariatur est. Illum repellat minus, et eum praesentium, officia eaque obcaecati harum numquam molestiae quo ullam? Perferendis!'
       }
     } else if(index == 2) {
       return {
-        name: '1000x50PXL (Desplegable)',
+        name: '1000x50 PX (Desplegable)',
         description: '1000x50 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, obcaecati labore dignissimos soluta pariatur est. Illum repellat minus, et eum praesentium, officia eaque obcaecati harum numquam molestiae quo ullam? Perferendis!'
       }
     } else if (index == 3) {
       return {
-        name: '728x90PXL',
+        name: '728x90 PX',
         description: 'También denominado "leaderboard". Suele ofrecer un mayor inventario de anuncios de los anunciantes, lo que puede aumentar los ingresos si se habilitan tanto los anuncios de texto como los anuncios de imagen estáticos. <br> <br> Tiene un buen rendimiento si se sitúa sobre el contenido principal y en foros.'
       }
     } else if (index == 4) {
       return {
-        name: '300x250PXL',
+        name: '300x250 PX',
         description: 'También denominado "rectángulo mediano". Suele ofrecer un mayor inventario de anuncios de los anunciantes, lo que puede aumentar los ingresos si se habilitan tanto los anuncios de texto como los anuncios de imagen estáticos. <br> <br> Tiene un buen rendimiento cuando se inserta dentro del contenido de texto o al final de artículos.'
       }
     } else if (index == 5) {
       return {
-        name: 'barra flotante (fijo)',
+        name: 'Barra flotante (Fijo)',
         description: 'barra flotante Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, obcaecati labore dignissimos soluta pariatur est. Illum repellat minus, et eum praesentium, officia eaque obcaecati harum numquam molestiae quo ullam? Perferendis!'
       }
     } else if (index == 6) {
@@ -38,12 +38,12 @@ class Home {
       }
     } else if (index == 7) {
       return {
-        name: 'Toma de home (desplegable + laterales)',
+        name: 'Toma de home (Desplegable + Laterales)',
         description: 'Toma de home Layer invasivo Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, obcaecati labore dignissimos soluta pariatur est. Illum repellat minus, et eum praesentium, officia eaque obcaecati harum numquam molestiae quo ullam? Perferendis!'
       }
     } else if (index == 8) {
       return {
-        name: '160x600PXL (lateral)',
+        name: '160x600 PX (Lateral)',
         description: 'También denominado "skyscraper ancho". Suele haber un mayor inventario de anuncios de los anunciantes disponible en él, lo que puede aumentar los ingresos si se habilitan tanto los anuncios de texto como los anuncios de imagen estáticos. <br> <br> Tiene un mejor rendimiento si se utiliza en las barras laterales de las páginas web.'
       }
     } else if (index == 0) {
@@ -57,17 +57,17 @@ class Home {
   namesBannersMovil (index) {
     if (index == 1) {
       return {
-        name: '320x50PXL',
+        name: '320x50 PX',
         description: 'También denominado "leaderboard para móviles". Este formato es un banner optimizado para dispositivos móviles. <br> <br> Se ha demostrado que estos anuncios funcionan bien como formato de anuncio para smartphones, especialmente cuando se colocan en la parte inferior de la página.'
       }
     } else if(index == 2) {
       return {
-        name: '320x100PXL',
-        description: 'También denominado "banner para dispositivos móviles grande". Se puede usar como alternativa a los formatos 320 x 50 y 300 x 250. <br> <br> Estos anuncios tienen el doble de altura que el "leaderboard para dispositivos móviles" estándar.'
+        name: '320x100 PX',
+        description: 'También denominado "banner para dispositivos móviles grande". Se puede usar como alternativa a los formatos 320 x 50 y 300 x 250. <br> <br> Estos anuncios tienen el doble de altura que el "leaderboard para dispositivos móviles" estándar. <strong>Imagenes: </strong> Tipos de archivo compatibles .gif, .jpg, .png que no superen los 300KB.'
       }
     } else if (index == 3) {
       return {
-        name: '300x250PXL',
+        name: '300x250 PX',
         description: 'También denominado "rectángulo mediano". Suele ofrecer un mayor inventario de anuncios de los anunciantes, lo que puede aumentar los ingresos si se habilitan tanto los anuncios de texto como los anuncios de imagen estáticos. <br> <br> Tiene un buen rendimiento cuando se inserta dentro del contenido de texto o al final de artículos.'
       }
     } else if (index == 4) {
