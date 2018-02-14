@@ -20,16 +20,16 @@
           <h3>Banner Web</h3>
         </li>
         <li class="uno">
-          <strong data-index="1">1000x90Px <i class="flecha"></i></strong>
+          <strong data-index="1">1000x90 PX<i class="flecha"></i></strong>
         </li>
         <li class="dos">
-          <strong data-index="2">1000x50Px <span>(Desplegable)</span> <i class="flecha"></i></strong>
+          <strong data-index="2">1000x50 PX<span>(Desplegable)</span> <i class="flecha"></i></strong>
         </li>
         <li class="tres">
-          <strong data-index="3">728x90Px <i class="flecha active"></i></strong>
+          <strong data-index="3">728x90 PX<i class="flecha active"></i></strong>
         </li>
         <li class="cuatro">
-          <strong data-index="4">300x250Px <i class="flecha"></i></strong>
+          <strong data-index="4">300x250 PX<i class="flecha"></i></strong>
         </li>
         <li class="barraFlotante">
           <strong data-index="5">Barra flotante <span>(fijo)</span><i class="flecha"></i></strong>
@@ -41,7 +41,7 @@
           <strong data-index="7">Toma de home <span>(desplegable + laterales)</span><i class="flecha"></i></strong>
         </li>
         <li class="160x160">
-          <strong data-index="8">160x600Px <span>(Lateral)</span><i class="flecha"></i></strong>
+          <strong data-index="8">160x600 PX<span>(Lateral)</span><i class="flecha"></i></strong>
         </li>
       </ul>
     </div>
@@ -51,13 +51,13 @@
           <h3>Banner Móvil</h3>
         </li>
         <li class="uno">
-          <strong data-index="1">320x50Px <i class="flecha"></i></strong>
+          <strong data-index="1">320x50 PX<i class="flecha"></i></strong>
         </li>
         <li class="dos">
-          <strong data-index="2">320x100Px <i class="flecha"></i></strong>
+          <strong data-index="2">320x100 PX<i class="flecha"></i></strong>
         </li>
         <li class="tres">
-          <strong data-index="3">300x250Px <i class="flecha"></i></strong>
+          <strong data-index="3">300x250 PX<i class="flecha"></i></strong>
         </li>
         <li class="cuatro">
           <strong data-index="4">Barra fija <i class="flecha"></i></strong>
