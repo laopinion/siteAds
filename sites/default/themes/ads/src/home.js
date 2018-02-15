@@ -9,7 +9,7 @@ class Home {
     if (index == 1) {
       return {
         name: '1000x90 PX',
-        description: '<p>En ocasiones se denomina "skyscraper horizontal grande" al igual que el 970x90. Este tamaño resulta ideal para mostrar contenido de alta definición, como fotos, animaciones y aplicaciones. </p> <p>Las imágenes de los banners pueden ser en formato .JPG, .JPEG y .PNG. El formato .JPEG y .JPG, son prácticamente lo mismo. Estos son especiales para imagenes con gran cantidad de colores, con una gama más amplia. </p><p>El formato .PNG se utiliza cuando la cantidad de colores es menor, como por ejemplo para dibujos, gráficos o ilustraciones.</p>'
+        description: 'En ocasiones se denomina "skyscraper horizontal grande" al igual que el 970x90. Este tamaño resulta ideal para mostrar contenido de alta definición, como fotos, animaciones y aplicaciones. <br> <br> Las imágenes de los banners pueden ser en formato .JPG, .JPEG y .PNG. El formato .JPEG y .JPG, son prácticamente lo mismo. Estos son especiales para imagenes con gran cantidad de colores, con una gama más amplia. <br> <br>El formato .PNG se utiliza cuando la cantidad de colores es menor, como por ejemplo para dibujos, gráficos o ilustraciones.'
       }
     } else if(index == 2) {
       return {
@@ -98,7 +98,7 @@ class Home {
       if (index === indexClick) {
         $(this).addClass('active');
         const name = _this.namesBanners(index);
-        $('#home .right .info #nameBanner').html(`Banner ${name.name}`);
+        $('#home .right .info #nameBanner').html(`${name.name}`);
         $('#home .right .info #infoBanner').html(`${name.description}`);
       }else {
         $(this).removeClass('active');
@@ -122,7 +122,7 @@ class Home {
       if (index === indexClick) {
         $(this).addClass('active');
         const name = _this.namesBannersMovil(index);
-        $('#home .right .info #nameBanner').html(`Banner ${name.name}`);
+        $('#home .right .info #nameBanner').html(`${name.name}`);
         $('#home .right .info #infoBanner').html(`${name.description}`);
       }else {
         $(this).removeClass('active');
@@ -240,7 +240,7 @@ class Home {
       $('#home .right .deviceDesktop').show();
       $('#home .right .deviceMovil').hide();
       let name = _this.encontrarName();
-      $('#home .right .info #nameBanner').html(`Banner ${name.name}`);
+      $('#home .right .info #nameBanner').html(`${name.name}`);
       $('#home .right .info #infoBanner').html(`${name.description}`);
     });
 
@@ -254,7 +254,7 @@ class Home {
       $('#home .left .boletin').find('.flecha').removeClass('active');
       $('#home .right .deviceMovil').show();
       let name = _this.encontrarNameMovil();
-      $('#home .right .info #nameBanner').html(`Banner ${name.name}`);
+      $('#home .right .info #nameBanner').html(`${name.name}`);
       $('#home .right .info #infoBanner').html(`${name.description}`);
     });
   }

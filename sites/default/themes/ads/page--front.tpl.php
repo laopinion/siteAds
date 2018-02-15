@@ -106,7 +106,8 @@
     <div class="info">
       <h3 id="nameBanner">728x90 PX</h3>
       <div class="imgBanner"></div>
-      <p id="infoBanner">También denominado "leaderboard". Suele ofrecer un mayor inventario de anuncios de los anunciantes, lo que puede aumentar los ingresos si se habilitan tanto los anuncios de texto como los anuncios de imagen estáticos. </p><p id="infoBanner">Tiene un buen rendimiento si se sitúa sobre el contenido principal. <p id="infoBanner">Las imágenes de los banners pueden ser en formato .JPG, .JPEG y .PNG. El formato .JPEG y .JPG, son prácticamente lo mismo. Estos son especiales para imagenes con gran cantidad de colores, con una gama más amplia. </p><p id="infoBanner">El formato .PNG se utiliza cuando la cantidad de colores es menor, como por ejemplo para dibujos, gráficos o ilustraciones.</p>
+      <p id="infoBanner">También denominado "leaderboard". Suele ofrecer un mayor inventario de anuncios de los anunciantes, lo que puede aumentar los ingresos si se habilitan tanto los anuncios de texto como los anuncios de imagen estáticos.
+      <br><br> Tiene un buen rendimiento si se sitúa sobre el contenido principal.Las imágenes de los banners pueden ser en formato .JPG, .JPEG y .PNG. El formato .JPEG y .JPG, son prácticamente lo mismo. <br><br>Estos son especiales para imagenes con gran cantidad de colores, con una gama más amplia. <br><br>El formato .PNG se utiliza cuando la cantidad de colores es menor, como por ejemplo para dibujos, gráficos o ilustraciones.</p>
     </div>
   </div>
 </section>
