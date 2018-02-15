@@ -9,42 +9,42 @@ class Home {
     if (index == 1) {
       return {
         name: '1000x90 PX',
-        description: '1000x90 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, obcaecati labore dignissimos soluta pariatur est. Illum repellat minus, et eum praesentium, officia eaque obcaecati harum numquam molestiae quo ullam? Perferendis!'
+        description: '<p>En ocasiones se denomina "skyscraper horizontal grande" al igual que el 970x90. Este tamaño resulta ideal para mostrar contenido de alta definición, como fotos, animaciones y aplicaciones. </p> <p>Las imágenes de los banners pueden ser en formato .JPG, .JPEG y .PNG. El formato .JPEG y .JPG, son prácticamente lo mismo. Estos son especiales para imagenes con gran cantidad de colores, con una gama más amplia. </p><p>El formato .PNG se utiliza cuando la cantidad de colores es menor, como por ejemplo para dibujos, gráficos o ilustraciones.</p>'
       }
     } else if(index == 2) {
       return {
         name: '1000x50 PX (Desplegable)',
-        description: '1000x50 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, obcaecati labore dignissimos soluta pariatur est. Illum repellat minus, et eum praesentium, officia eaque obcaecati harum numquam molestiae quo ullam? Perferendis!'
+        description: '<p>Este formato de anuncio se amplía a 1000 x 250 cuando se usa como pauta desplegable "empujando" suavemente todos los elementos de página hacia abajo. La primera impresión de usuario inicia automáticamente el desplazamiento hacia abajo.</p><p>Las imágenes de los banners pueden ser en formato .JPG, .JPEG y .PNG. El formato .JPEG y .JPG, son prácticamente lo mismo. Estos son especiales para imagenes con gran cantidad de colores, con una gama más amplia. </p><p>El formato .PNG se utiliza cuando la cantidad de colores es menor, como por ejemplo para dibujos, gráficos o ilustraciones.</p>'
       }
     } else if (index == 3) {
       return {
         name: '728x90 PX',
-        description: 'También denominado "leaderboard". Suele ofrecer un mayor inventario de anuncios de los anunciantes, lo que puede aumentar los ingresos si se habilitan tanto los anuncios de texto como los anuncios de imagen estáticos. <br> <br> Tiene un buen rendimiento si se sitúa sobre el contenido principal y en foros.'
+        description: '<p>También denominado "leaderboard". Suele ofrecer un mayor inventario de anuncios de los anunciantes, lo que puede aumentar los ingresos si se habilitan tanto los anuncios de texto como los anuncios de imagen estáticos. </p><p>Tiene un buen rendimiento si se sitúa sobre el contenido principal. <p>Las imágenes de los banners pueden ser en formato .JPG, .JPEG y .PNG. El formato .JPEG y .JPG, son prácticamente lo mismo. Estos son especiales para imagenes con gran cantidad de colores, con una gama más amplia. </p><p>El formato .PNG se utiliza cuando la cantidad de colores es menor, como por ejemplo para dibujos, gráficos o ilustraciones.</p>'
       }
     } else if (index == 4) {
       return {
         name: '300x250 PX',
-        description: 'También denominado "rectángulo mediano". Suele ofrecer un mayor inventario de anuncios de los anunciantes, lo que puede aumentar los ingresos si se habilitan tanto los anuncios de texto como los anuncios de imagen estáticos. <br> <br> Tiene un buen rendimiento cuando se inserta dentro del contenido de texto o al final de artículos.'
+        description: '<p>También denominado "rectángulo mediano". </p> <p>Tiene un buen rendimiento cuando se inserta dentro del contenido de texto o al final de artículos. </p><p>Las imágenes de los banners pueden ser en formato .JPG, .JPEG y .PNG. El formato .JPEG y .JPG, son prácticamente lo mismo. Estos son especiales para imagenes con gran cantidad de colores, con una gama más amplia. </p><p>El formato .PNG se utiliza cuando la cantidad de colores es menor, como por ejemplo para dibujos, gráficos o ilustraciones.</p>'
       }
     } else if (index == 5) {
       return {
         name: 'Barra flotante (Fijo)',
-        description: 'barra flotante Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, obcaecati labore dignissimos soluta pariatur est. Illum repellat minus, et eum praesentium, officia eaque obcaecati harum numquam molestiae quo ullam? Perferendis!'
+        description: '<p>Este formato es del tamaño de 1000x50 pero no es desplegable, su comportamiento natural permite mantener la visualización del anuncio aun cuando el usuario hace scroll. </p><p>Las imágenes de los banners pueden ser en formato .JPG, .JPEG y .PNG. El formato .JPEG y .JPG, son prácticamente lo mismo. Estos son especiales para imagenes con gran cantidad de colores, con una gama más amplia. </p><p>El formato .PNG se utiliza cuando la cantidad de colores es menor, como por ejemplo para dibujos, gráficos o ilustraciones.</p>'
       }
     } else if (index == 6) {
       return {
         name: 'Layer invasivo',
-        description: 'Layer invasivo Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, obcaecati labore dignissimos soluta pariatur est. Illum repellat minus, et eum praesentium, officia eaque obcaecati harum numquam molestiae quo ullam? Perferendis!'
+        description: '<p>Tambien conocido como "interstitial" ocupa gran parte de la pantalla. </p><p>Por lo general, el interstitial solo aparece la primera vez que se visita una web o al cambiar de sección, pero depende de la configuración asignada. </p><p>Por lo general lleva un boton para cerrarlo en la parte superior derecha del anuncio y que, al hacer clic permite visualizar el contenido sin interrupciones. </p><p>Las imágenes de los banners pueden ser en formato .JPG, .JPEG y .PNG. El formato .JPEG y .JPG, son prácticamente lo mismo. Estos son especiales para imagenes con gran cantidad de colores, con una gama más amplia. </p><p>El formato .PNG se utiliza cuando la cantidad de colores es menor, como por ejemplo para dibujos, gráficos o ilustraciones.</p>'
       }
     } else if (index == 7) {
       return {
         name: 'Toma de home (Desplegable + Laterales)',
-        description: 'Toma de home Layer invasivo Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, obcaecati labore dignissimos soluta pariatur est. Illum repellat minus, et eum praesentium, officia eaque obcaecati harum numquam molestiae quo ullam? Perferendis!'
+        description: '<p>La toma de home se compone de 3 piezas, 2 de 160x600 conocido como "skyscraper ancho" y 1 pieza de 100x50 (Despegable). </p><p>Las imágenes de los banners pueden ser en formato .JPG, .JPEG y .PNG. El formato .JPEG y .JPG, son prácticamente lo mismo. Estos son especiales para imagenes con gran cantidad de colores, con una gama más amplia. </p><p>El formato .PNG se utiliza cuando la cantidad de colores es menor, como por ejemplo para dibujos, gráficos o ilustraciones.</p>'
       }
     } else if (index == 8) {
       return {
         name: '160x600 PX (Lateral)',
-        description: 'También denominado "skyscraper ancho". Suele haber un mayor inventario de anuncios de los anunciantes disponible en él, lo que puede aumentar los ingresos si se habilitan tanto los anuncios de texto como los anuncios de imagen estáticos. <br> <br> Tiene un mejor rendimiento si se utiliza en las barras laterales de las páginas web.'
+        description: '<p>También denominado "skyscraper ancho". Suele haber un mayor inventario de anuncios de los anunciantes disponible en él, lo que puede aumentar los ingresos si se habilitan tanto los anuncios de texto como los anuncios de imagen estáticos. </p> <p>Tiene un mejor rendimiento si se utiliza en las barras laterales de las páginas web. </p> <p>Las imágenes de los banners pueden ser en formato .JPG, .JPEG y .PNG. El formato .JPEG y .JPG, son prácticamente lo mismo. Estos son especiales para imagenes con gran cantidad de colores, con una gama más amplia. </p><p>El formato .PNG se utiliza cuando la cantidad de colores es menor, como por ejemplo para dibujos, gráficos o ilustraciones.</p>'
       }
     } else if (index == 0) {
       return {
@@ -58,22 +58,22 @@ class Home {
     if (index == 1) {
       return {
         name: '320x50 PX',
-        description: 'También denominado "leaderboard para móviles". Este formato es un banner optimizado para dispositivos móviles. <br> <br> Se ha demostrado que estos anuncios funcionan bien como formato de anuncio para smartphones, especialmente cuando se colocan en la parte inferior de la página.'
+        description: '<p>También denominado "leaderboard para móviles". Este formato es un banner optimizado para dispositivos móviles. </p><p>Se ha demostrado que estos anuncios funcionan bien como formato de anuncio para smartphones, especialmente cuando se colocan en la parte inferior de la página. </p><p>Las imágenes de los banners pueden ser en formato .JPG, .JPEG y .PNG. El formato .JPEG y .JPG, son prácticamente lo mismo. Estos son especiales para imagenes con gran cantidad de colores, con una gama más amplia. </p><p>El formato .PNG se utiliza cuando la cantidad de colores es menor, como por ejemplo para dibujos, gráficos o ilustraciones.</p>'
       }
     } else if(index == 2) {
       return {
         name: '320x100 PX',
-        description: 'También denominado "banner para dispositivos móviles grande". Se puede usar como alternativa a los formatos 320 x 50 y 300 x 250. <br> <br> Estos anuncios tienen el doble de altura que el "leaderboard para dispositivos móviles" estándar. <strong>Imagenes: </strong> Tipos de archivo compatibles .gif, .jpg, .png que no superen los 300KB.'
+        description: '<p>También denominado "banner para dispositivos móviles grande". Se puede usar como alternativa a los formatos 320 x 50 y 300 x 250. </p> <p>Estos anuncios tienen el doble de altura que el "leaderboard para dispositivos móviles" estándar. <p>Las imágenes de los banners pueden ser en formato .JPG, .JPEG y .PNG. El formato .JPEG y .JPG, son prácticamente lo mismo. Estos son especiales para imagenes con gran cantidad de colores, con una gama más amplia. </p><p>El formato .PNG se utiliza cuando la cantidad de colores es menor, como por ejemplo para dibujos, gráficos o ilustraciones.</p>'
       }
     } else if (index == 3) {
       return {
         name: '300x250 PX',
-        description: 'También denominado "rectángulo mediano". Suele ofrecer un mayor inventario de anuncios de los anunciantes, lo que puede aumentar los ingresos si se habilitan tanto los anuncios de texto como los anuncios de imagen estáticos. <br> <br> Tiene un buen rendimiento cuando se inserta dentro del contenido de texto o al final de artículos.'
+        description: '<p>También denominado "rectángulo mediano". </p> <p>Tiene un buen rendimiento cuando se inserta dentro del contenido de texto o al final de artículos. </p><p>Las imágenes de los banners pueden ser en formato .JPG, .JPEG y .PNG. El formato .JPEG y .JPG, son prácticamente lo mismo. Estos son especiales para imagenes con gran cantidad de colores, con una gama más amplia. </p><p>El formato .PNG se utiliza cuando la cantidad de colores es menor, como por ejemplo para dibujos, gráficos o ilustraciones.</p>'
       }
     } else if (index == 4) {
       return {
         name: 'Barra fija',
-        description: ' Barra fija ...'
+        description: '<p>Este formato es del tamaño de 320x50, su comportamiento natural permite mantener la visualización del anuncio aun cuando el usuario hace scroll. </p><p>Las imágenes de los banners pueden ser en formato .JPG, .JPEG y .PNG. El formato .JPEG y .JPG, son prácticamente lo mismo. Estos son especiales para imagenes con gran cantidad de colores, con una gama más amplia. </p><p>El formato .PNG se utiliza cuando la cantidad de colores es menor, como por ejemplo para dibujos, gráficos o ilustraciones.</p>'
       }
     } else if (index == 0) {
       return {
