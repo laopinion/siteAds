@@ -181,7 +181,8 @@ class Home {
       $('#home .left .boletin').find('.flecha').removeClass('active');
       $(this).find('.flecha').addClass('active');
       const name = 'Landing (página de aterrizaje)';
-      $('#home .right .info #nameBanner').html(`Banner ${name}`);
+      $('#home .right .info #nameBanner').html(name);
+      $('#home .right .info #infoBanner').html('');
 
       _this.ocultarMenu();
     });
@@ -203,7 +204,8 @@ class Home {
       $('#home .left .landing').find('.flecha').removeClass('active');
       $(this).find('.flecha').addClass('active');
       const name = 'Boletin de noticias';
-      $('#home .right .info #nameBanner').html(`Banner ${name}`);
+      $('#home .right .info #nameBanner').html(name);
+      $('#home .right .info #infoBanner').html('');
       _this.ocultarMenu();
     })
   }
