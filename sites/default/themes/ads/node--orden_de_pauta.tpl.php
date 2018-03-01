@@ -101,5 +101,11 @@
         <?php print render($content['field_presupuesto']); ?>
       </div>
     </li>
+    <li>
+      <label>Estado</label>
+      <div class="valor">
+        <?php print render($content['field_estado']); ?>
+      </div>
+    </li>
   </ul>
 </section>
