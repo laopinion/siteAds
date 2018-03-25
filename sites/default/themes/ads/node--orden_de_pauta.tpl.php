@@ -1,5 +1,5 @@
 <section id="ordenPauta" class="container">
-  <h3>About the studio</h3>
+  <h3>Orden de pauta</h3>
   <div class="autor">
     <aside id="idUser" style="display: none;"><?php print render($content['field_autor']); ?></aside>
     <div class="picture"></div>
@@ -29,12 +29,12 @@
         <?php print render($content['field_canal']); ?>
       </div>
     </li>
-    <li>
+    <!-- <li>
       <label>Personalidad de la marca</label>
       <div class="valor">
-        <?php print render($content['field_personalidad_de_la_marca']); ?>
+        <?php //print render($content['field_personalidad_de_la_marca']); ?>
       </div>
-    </li>
+    </li> -->
     <li>
       <label>Tipo de publicidad</label>
       <div class="valor">
@@ -59,12 +59,12 @@
         <?php print render($content['field_descripcion_del_producto']); ?>
       </div>
     </li>
-    <li>
+    <!-- <li>
       <label>Target</label>
       <div class="valor">
-        <?php print render($content['field_target']); ?>
+        <?php //print render($content['field_target']); ?>
       </div>
-    </li>
+    </li> -->
     <li>
       <label>Objetivo de la publicidad</label>
       <div class="valor">
@@ -78,7 +78,7 @@
       </div>
     </li>
     <li>
-      <label>Timing</label>
+      <label>Enlace de destino</label>
       <div class="valor">
         <?php print render($content['field_timing']); ?>
       </div>
@@ -99,6 +99,12 @@
       <label>Presupuesto</label>
       <div class="valor">
         <?php print render($content['field_presupuesto']); ?>
+      </div>
+    </li>
+    <li>
+      <label>Estado</label>
+      <div class="valor">
+        <?php print render($content['field_estado']); ?>
       </div>
     </li>
   </ul>
