@@ -102,6 +102,18 @@
       </div>
     </li>
     <li>
+      <label>Archivos</label>
+      <div class="valor">
+        <?php print render($content['field_archivos']); ?>
+      </div>
+    </li>
+    <li>
+      <label>Galerías</label>
+      <div class="valor">
+        <?php print render($content['field_galeria']); ?>
+      </div>
+    </li>
+    <li>
       <label>Estado</label>
       <div class="valor">
         <?php print render($content['field_estado']); ?>
