@@ -10,6 +10,10 @@
     <?php print render($content['body']); ?>
   </article>
 
+  <figure>
+    <?php print render($content['field_image']); ?>
+  </figure>
+
   <div id="noticias" class="container">
     <hr>
     <h3>Noticias</h3>
