@@ -114,6 +114,18 @@
       </div>
     </li>
     <li>
+      <label>Pregunta encuesta</label>
+      <div class="valor">
+        <?php print render($content['field_encuesta']); ?>
+      </div>
+    </li>
+    <li>
+      <label>Imágenes encuesta</label>
+      <div class="valor">
+        <?php print render($content['field_imagenes']); ?>
+      </div>
+    </li>
+    <li>
       <label>Estado</label>
       <div class="valor">
         <?php print render($content['field_estado']); ?>
