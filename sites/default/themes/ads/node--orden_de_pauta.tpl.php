@@ -108,7 +108,7 @@
       </div>
     </li>
     <li>
-      <label>Galerías</label>
+      <label>Imágenes redes sociales</label>
       <div class="valor">
         <?php print render($content['field_galeria']); ?>
       </div>
