@@ -131,5 +131,11 @@
         <?php print render($content['field_estado']); ?>
       </div>
     </li>
+    <li>
+      <label>Imágenes pauta web</label>
+      <div class="valor">
+        <?php print render($content['field_imagenes_pauta_web']); ?>
+      </div>
+    </li>
   </ul>
 </section>
